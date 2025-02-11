@@ -1,0 +1,5 @@
+﻿HelloWorld/x64
+.vs
+*.filters
+*.vcxproj
+*.sln
