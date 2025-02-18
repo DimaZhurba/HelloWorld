@@ -103,3 +103,26 @@ void Sorter<T>::MergeSortImpl(T range[], T buffer[], const size_t start, const s
         range[i] = buffer[i];
     }
 }
+
+class SorterTest
+{
+public:
+    static void Test();
+};
+
+void SorterTest::Test()
+{
+    for (size_t i = 10; i <= 10; ++i)
+    {
+        auto unsortedVector = Sorter<char>::GenerateVector(i);
+        auto sortedVector = Sorter<char>::MergeSort(unsortedVector, true);
+
+        for (auto& item : unsortedVector)
+            std::cout << item << " ";
+        std::cout << std::endl;
+        for (auto& item : sortedVector)
+            std::cout << item << " ";
+        std::cout << std::endl;
+        std::cout << std::endl;
+    }
+}

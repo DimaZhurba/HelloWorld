@@ -15,3 +15,9 @@
 // Out
 
 std::vector<int> Search(std::vector<int> nums, int target);
+
+class SearchTest
+{
+public:
+    static void Test();
+};

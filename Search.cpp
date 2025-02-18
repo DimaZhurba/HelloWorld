@@ -1,3 +1,4 @@
+#include <iostream>
 #include <algorithm>
 #include <map>
 #include "Search.h"
@@ -23,4 +24,15 @@ std::vector<int> Search(std::vector<int> nums, int target)
     }
 
     return { firstIndex, secondIndex };
+}
+
+void SearchTest::Test()
+{
+    //auto result = Search({ 2, 7, 11, 15 }, 9);
+    auto result = Search({ 3, 2, 4 }, 6);
+    for (auto item : result)
+    {
+        std::cout << item << " ";
+    }
+    std::cout << std::endl;
 }
